@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+video{
+    width: 100%;
+    height: 100%;
+}
+
+.hola{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aviso{
+    position: absolute;
+    z-index: 20;
+    text-align: center;
+    
+}
+.titulo{
+    position: absolute;
+    z-index: 10;
+    margin-top: 5%;
+    letter-spacing: 2px;
+    font-size: 30px;
+    animation: pulse 0.5s infinite;
+    text-align: center;
+}
+
+
+@keyframes pulse {
+    0% {
+      color: red;
+    }
+    8.3% {
+      color: orange;
+    }
+    16.6% {
+      color: yellow;
+    }
+    25% {
+      color: green;
+    }
+    33.3% {
+      color: blue;
+    }
+    41.6% {
+      color: indigo;
+    }
+    50% {
+      color: violet;
+    }
+    58.3% {
+      color: indigo;
+    }
+    66.6% {
+      color: blue;
+    }
+    75% {
+      color: green;
+    }
+    83.3% {
+      color: yellow;
+    }
+    91.6% {
+      color: orange;
+    }
+    100% {
+      color: red;
+    }
+}
+@keyframes spin {
+    
+}
