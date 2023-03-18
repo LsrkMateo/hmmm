@@ -4,86 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
     <title>Feliz</title>
 </head>
-<style>
-    * {
-    padding: 0;
-    margin: 0;
-    font-family: monospace;
-}
-video{
-    width: 100%;
-    height: 100%;
-}
-
-.hola{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.aviso{
-    position: absolute;
-    z-index: 20;
-    text-align: center;
-    
-}
-.titulo{
-    position: absolute;
-    z-index: 10;
-    margin-top: 5%;
-    letter-spacing: 2px;
-    font-size: 30px;
-    animation: pulse 0.5s infinite;
-    text-align: center;
-}
-
-
-@keyframes pulse {
-    0% {
-      color: red;
-    }
-    8.3% {
-      color: orange;
-    }
-    16.6% {
-      color: yellow;
-    }
-    25% {
-      color: green;
-    }
-    33.3% {
-      color: blue;
-    }
-    41.6% {
-      color: indigo;
-    }
-    50% {
-      color: violet;
-    }
-    58.3% {
-      color: indigo;
-    }
-    66.6% {
-      color: blue;
-    }
-    75% {
-      color: green;
-    }
-    83.3% {
-      color: yellow;
-    }
-    91.6% {
-      color: orange;
-    }
-    100% {
-      color: red;
-    }
-}
-@keyframes spin {
-    
-}
-</style>
 <body>
     <div class="hola">
         <h3 class="titulo">dale bro, sin miedo</h3>
@@ -92,40 +15,6 @@ video{
         <video src="" class="video" muted autoplay loop></video>
         
     </div>
-<script>
-let contador = 0;
-let video = document.querySelector(".video")
-let aviso = document.querySelector(".aviso")
-let titulo = document.querySelector(".titulo")
-let audio = document.querySelector(".audio")
-
-addEventListener("visibilitychange",()=>{
-    contador +=1/2;
-    console.log(contador)
-    if(contador == 1){
-        video.setAttribute("src", "/No sea sapo y abra el index/paloma.mp4");
-        aviso.innerHTML = "Listo, ahora lo entiendes :D <br> sal de la pagina y vuevle a entrar cuantas veces quieras, diviertete y feliz cumpleaños :D"        
-        aviso.setAttribute("style","top: 0; margin-top: 80px;")
-        titulo.innerHTML = "😎 FELIZ CUMPLEAÑOS SERGIO 😎"
-    } else if (contador == 2){
-        video.setAttribute("src", "/No sea sapo y abra el index/monos.mp4")
-        aviso.innerHTML = "jaja unos monos 💀"
-        titulo.innerHTML = "WOOOOO"
-        audio.setAttribute("src","/No sea sapo y abra el index/lalala.mp4")
-    } else if (contador == 3){
-        video.setAttribute("src","/No sea sapo y abra el index/nugget.mp4")
-        aviso.innerHTML = "Bro... este nugget me hizo reflexionar 💀"
-        titulo.innerHTML = "➡️⁉️"
-    } else if (contador == 4){
-        video.setAttribute("src","/No sea sapo y abra el index/mario.mp4")
-        aviso.innerHTML = "Gracias por ser mi amigo todos estos años, lo quiero mucho"
-        titulo.innerHTML = "Weepaaa "
-    } else if (contador == 5){
-        video.setAttribute("src","/No sea sapo y abra el index/patricio.mp4")
-        titulo.innerHTML = "PATRICIOOOO"
-        aviso.innerHTML =""
-    }
-})
-</script>
+<script src="codigo.js"></script>
 </body>
 </html>
