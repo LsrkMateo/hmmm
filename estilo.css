@@ -3,32 +3,50 @@
     margin: 0;
     font-family: monospace;
 }
+
 video{
     width: 100%;
     height: 100%;
+    position: absolute;
+    z-index: -1;
 }
 
 .hola{
+    margin-top: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .aviso{
-    position: absolute;
-    z-index: 20;
     text-align: center;
+    margin: 20px;
+    order: 0;
     
 }
 .titulo{
-    position: absolute;
-    z-index: 10;
-    margin-top: 5%;
     letter-spacing: 2px;
     font-size: 30px;
     animation: pulse 0.5s infinite;
     text-align: center;
+    order: 1;
 }
 
+.boton_movil{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px;
+    order: 2;
+}
+
+.ayuda{
+    order: 3;
+    margin: 20px;
+    text-align: center;
+}
+    
 
 @keyframes pulse {
     0% {
