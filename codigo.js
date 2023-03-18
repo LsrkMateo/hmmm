@@ -42,7 +42,7 @@ if (mq.matches){
             video.setAttribute("src", "monos.mp4")
             aviso.innerHTML = "jaja unos monos 💀"
             titulo.innerHTML = "WOOOOO"
-            audio.setAttribute("src","lalala.mp3.mp4")
+            audio.setAttribute("src","nugget.mp3")
         } else if (contador == 3){
             video.setAttribute("src","nugget.mp4")
             aviso.innerHTML = "Bro... este nugget me hizo reflexionar 💀"
